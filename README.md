@@ -34,8 +34,6 @@ to-do-list/
 ### 🌐 Live on GitHub Pages
 > If you’ve enabled GitHub Pages for this repo:  
 **[Click here to view live ➜](https://koustavcodes.github.io/to-do-list-app/)**  
-*(https://koustavcodes.github.io/to-do-list-app/)*
-
 ---
 
 ## 🛠️ Future Improvements (Optional)
