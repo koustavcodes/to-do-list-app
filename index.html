@@ -6,12 +6,18 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h2>Item List</h2>
-    <input type="text" id="todo-input" placeholder="Enter item" />
-    <button onclick="addItem()">Add Item</button>
-    <ul id="todo-list"></ul>
-  </div>
+  <main class="main-content">
+    <div class="container">
+      <h2>Item List</h2>
+      <input type="text" id="todo-input" placeholder="Enter item" />
+      <button onclick="addItem()">Add Item</button>
+      <ul id="todo-list"></ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> <a href="https://github.com/koustavcodes" target="_blank">koustavcodes</a>. All rights reserved.
+  </footer>
 
   <script src="script.js"></script>
 </body>

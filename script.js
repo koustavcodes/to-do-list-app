@@ -17,3 +17,6 @@ function addItem() {
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") addItem();
 });
+
+// Set current year in footer
+document.getElementById("year").textContent = new Date().getFullYear();
