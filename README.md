@@ -17,6 +17,7 @@ A clean and lightweight to-do list web app built with plain HTML, CSS, and JavaS
 ## 📁 File Structure
 
 to-do-list/
+
 ├── index.html      → Main structure of the app  
 ├── style.css       → Custom styles for layout and design  
 └── script.js       → Logic for adding/removing items
@@ -33,7 +34,7 @@ to-do-list/
 ### 🌐 Live on GitHub Pages
 > If you’ve enabled GitHub Pages for this repo:  
 **[Click here to view live ➜](https://koustavcodes.github.io/to-do-list-app/)**  
-*(replace with your actual repo link)*
+*(https://koustavcodes.github.io/to-do-list-app/)*
 
 ---
 
