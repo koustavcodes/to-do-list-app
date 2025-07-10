@@ -69,18 +69,23 @@ li {
 
 .task-text {
   flex: 1 1 auto;
+  min-width: 0;
   overflow-wrap: break-word;
   white-space: normal;
-  display: block;
+  display: inline-block;
   font-size: 16px;
   word-break: break-word;
 }
 
 .delete {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
   background: #fff;
   color: #dc3545;
   border: 1px solid #eee;
-  padding: 4px;
+  padding: 0;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
