@@ -67,13 +67,21 @@ li {
 }
 
 .delete {
-  background: #dc3545;
-  color: white;
+  background: transparent;
+  color: #dc3545;
   border: none;
-  padding: 6px 10px;
-  border-radius: 4px;
+  padding: 4px;
+  border-radius: 50%;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.delete:hover {
+  background: #ffeaea;
 }
 
 /* Footer */
