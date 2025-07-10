@@ -31,11 +31,13 @@ h2 {
 
 input {
   width: 100%;
+  box-sizing: border-box;
   padding: 12px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1.5px solid #222;
+  border-radius: 8px;
   margin-bottom: 20px;
+  outline: none;
 }
 
 button {
