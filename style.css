@@ -68,8 +68,12 @@ li {
 }
 
 .task-text {
-  flex: 1;
-  overflow-wrap: anywhere;
+  flex: 1 1 auto;
+  overflow-wrap: break-word;
+  white-space: normal;
+  display: block;
+  font-size: 16px;
+  word-break: break-word;
 }
 
 .delete {
