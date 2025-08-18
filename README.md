@@ -47,9 +47,3 @@ to-do-list/
 ## 🧑‍💻 Author
 
 Made with ❤️ by [Koustav Sarkar](https://github.com/koustavcodes)
-
----
-
-## 📜 License
-
-This project is open source and free to use under the [MIT License](LICENSE).
