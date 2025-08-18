@@ -64,9 +64,58 @@ li {
   border-radius: 5px;
   margin-bottom: 10px;
   display: flex;
+  align-items: center; /* <-- Add this for vertical alignment */
   justify-content: space-between;
-  align-items: center;
   position: relative;
+  padding-left: 44px; /* Adjusted for checkmark space */
+}
+
+/* Hide the default checkbox */
+.complete-checkbox {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Custom checkmark icon */
+li .checkmark {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  border: 2px solid #bbb;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: border-color 0.2s;
+}
+
+li.completed .checkmark {
+  border-color: #28a745;
+  background: #28a745;
+}
+
+li .checkmark svg {
+  display: none;
+}
+
+li.completed .checkmark svg,
+li .checkmark svg {
+  display: block;
+  color: #fff;
+  width: 10px;
+  height: 10px;
 }
 
 .task-text {
@@ -105,6 +154,12 @@ li:hover .delete {
 
 .delete:hover {
   background: #ffeaea;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  color: #aaa;
+  opacity: 0.7;
 }
 
 /* Footer */
