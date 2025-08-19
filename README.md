@@ -40,7 +40,6 @@ to-do-list/
 - [ ] Save tasks in `localStorage` for persistence
 - [ ] Add "Clear All" button
 - [ ] Add dark mode toggle
-- [ ] Mark tasks as complete
 
 ---
 
