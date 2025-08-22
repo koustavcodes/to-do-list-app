@@ -1,4 +1,4 @@
-/* Reset & Base */
+/* Root Variables & Base */
 :root {
   --bg-main: #fff;
   --bg-task: #f1f1f1;
@@ -24,6 +24,7 @@
   }
 }
 
+/* Global Styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   background: var(--bg-main);
@@ -35,12 +36,11 @@ body {
   min-height: 100vh;
 }
 
-/* Main content wrapper */
+/* Layout & Containers */
 .main-content {
   flex: 1;
 }
 
-/* To-do container */
 .container {
   width: 400px;
   margin: 50px auto;
@@ -50,12 +50,14 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Headings */
 h2 {
   color: var(--heading);
   margin-bottom: 20px;
 }
 
-input {
+/* Inputs & Buttons */
+input[type="text"], input[type="search"], input[type="email"], input[type="password"] {
   width: 100%;
   box-sizing: border-box;
   padding: 12px;
@@ -83,8 +85,59 @@ button {
   border-radius: 6px;
   cursor: pointer;
   box-shadow: 0 5px 12px rgba(40, 167, 69, 0.3);
+  transition: background 0.2s;
 }
 
+/* Button Container */
+#button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#add-item {
+  flex: 1;
+}
+
+#delete-all {
+  background: var(--bg-main);
+  color: #dc3545;
+  border: 1px solid var(--border-task);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  height: 48px;
+  width: 48px;
+  min-width: 48px;
+  padding: 0;
+}
+
+#delete-all svg {
+  display: block;
+  margin: auto;
+  fill: #dc3545;
+  width: 22px;
+  height: 22px;
+  transition: fill 0.2s;
+}
+
+#delete-all:hover {
+  background: #fff;
+}
+
+#delete-all:hover svg {
+  fill: #dc3545;
+}
+
+#delete-all:active {
+  background: #ffeaea;
+}
+
+/* Task List */
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -99,10 +152,10 @@ li {
   border-radius: 5px;
   margin-bottom: 10px;
   display: flex;
-  align-items: center; /* <-- Add this for vertical alignment */
+  align-items: center;
   justify-content: space-between;
   position: relative;
-  padding-left: 44px; /* Adjusted for checkmark space */
+  padding-left: 44px;
 }
 
 /* Hide the default checkbox */
@@ -164,6 +217,7 @@ li .checkmark svg {
   color: var(--text-main);
 }
 
+/* Delete Button (Single Task) */
 .delete {
   width: 28px;
   height: 28px;
