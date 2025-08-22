@@ -7,10 +7,14 @@ A clean and lightweight to-do list web app built with plain HTML, CSS, and JavaS
 ## 🔧 Features
 
 - Add and delete to-do items
+- Mark tasks as completed with a checkbox
+- Strikethrough and faded style for completed tasks
+- Delete all tasks with a single click
 - Clean and modern UI
 - Keyboard support (press `Enter` to add)
+- Responsive design for desktop web
+- Dark mode support (based on system theme)
 - Built without any external dependencies
-- Fast and offline-capable
 
 ---
 
@@ -24,22 +28,17 @@ to-do-list/
 
 ---
 
-## 🚀 How to Use
+## 🚀 Future Improvements
 
-### 📌 Run Locally
-1. Clone or download the repo.
-2. Open `index.html` in any modern web browser.
-3. Start adding your tasks!
+- [ ] Mobile responsiveness
+- [x] Add "Clear All" button
+- [x] Add dark mode support (system theme)
+- [x] Add checkbox for task completion
 
-### 🌐 Live on GitHub Pages
-> If you’ve enabled GitHub Pages for this repo:  
-**[Click here to view live ➜](https://koustavcodes.github.io/to-do-list-app/)**  
 ---
 
-## 🛠️ Future Improvements (Optional)
-- [ ] Save tasks in `localStorage` for persistence
-- [ ] Add "Clear All" button
-- [ ] Add dark mode toggle
+### 🌐 Live Demo
+[View the app live on Netlify ➜](https://todobykoustav.netlify.app/)
 
 ---
 
