@@ -10,6 +10,7 @@ A clean and lightweight to-do list web app built with plain HTML, CSS, and JavaS
 - Mark tasks as completed with a checkbox
 - Strikethrough and faded style for completed tasks
 - Delete all tasks with a single click
+- Persistent storage — tasks survive page reloads via `localStorage`
 - Clean and modern UI
 - Keyboard support (press `Enter` to add)
 - Responsive design for desktop web
@@ -24,7 +25,7 @@ to-do-list/
 
 ├── index.html      → Main structure of the app  
 ├── style.css       → Custom styles for layout and design  
-└── script.js       → Logic for adding/removing items
+└── script.js       → App logic: add/remove/toggle items + localStorage persistence
 
 ---
 
@@ -34,6 +35,7 @@ to-do-list/
 - [x] Add "Clear All" button
 - [x] Add dark mode support (system theme)
 - [x] Add checkbox for task completion
+- [x] Persist tasks with `localStorage` (text, completed state, and order)
 
 ---
 
